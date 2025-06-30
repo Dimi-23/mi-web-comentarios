@@ -6,7 +6,7 @@
   <title>Mi página con comentarios</title>
   <style>
     body {
-      background: linear-gradient(to bottom right, #a77fff, #6a42ff);
+      background: #a77fff; /* lila sólido */
       color: #fff;
       font-family: Arial, sans-serif;
       margin: 0;
@@ -20,14 +20,14 @@
       margin-bottom: 1rem;
     }
     .utterances {
-      background-color: rgba(255, 255, 255, 0.15);
-      backdrop-filter: blur(10px);
+      background-color: rgba(255, 255, 255, 0.15); /* transparencia en el contenedor */
       border-radius: 12px;
       padding: 1rem;
       max-width: 700px;
       width: 100%;
       margin-top: 2rem;
       box-sizing: border-box;
+      overflow: hidden; /* evitar scroll raro */
     }
   </style>
 </head>
@@ -46,3 +46,4 @@
   </div>
 </body>
 </html>
+
