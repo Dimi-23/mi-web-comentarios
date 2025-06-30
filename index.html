@@ -18,24 +18,33 @@
     h1 {
       margin-bottom: 1rem;
     }
+    #comments-container {
+      background-color: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(10px);
+      border-radius: 12px;
+      padding: 1rem;
+      max-width: 700px;
+      width: 100%;
+      margin-top: 2rem;
+      box-sizing: border-box;
+      min-height: 300px; /* para que se note el fondo aunque no cargue aún */
+    }
     </style>
 </head>
 <body>
-  <h1>Hola, bienvenido a mi web</h1>
-  <p>Esta es una web básica con comentarios.</p>
+  <h1>Bienvenido a mi página</h1>
+  <p>Aquí puedes dejar tus comentarios abajo:</p>
 
-  <!-- Contenedor de comentarios -->
-  <section id="comments">
-    <h2>Comentarios</h2>
-    <!-- Aquí se cargará Utterances -->
+  <div id="comments-container">
     <script src="https://utteranc.es/client.js"
       repo="Dimi-23/mi-web-comentarios"
       issue-term="pathname"
-      theme="github-light"
+      theme="github-dark"
       crossorigin="anonymous"
       async>
     </script>
-  </section>
+  </div>
+
 </body>
 </html>
 
